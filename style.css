@@ -1,0 +1,100 @@
+:root {
+  /* - Mobile: 375px
+- Desktop: 1440px */
+  --primary_purple: hsl(259, 100%, 65%);
+  --primary_light: hsl(0, 100%, 67%);
+
+  --Neutral_white: hsl(0, 0%, 100%);
+  --Off_white: hsl(0, 0%, 94%);
+  --Light_grey: hsl(0, 0%, 86%);
+  --Smokey_grey: hsl(0, 1%, 44%);
+  --Off_black: hsl(0, 0%, 8%);
+
+  --Font_size: 32px; /*for inputs */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Light_grey);
+  max-width: 1440px;
+}
+.container {
+  position: absolute;
+  width: 590px;
+  height: 440px;
+  background-color: var(--Neutral_white);
+  border-radius: 20px;
+  border-bottom-right-radius: 30%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inputs {
+  display: flex;
+  margin: 35px 40px;
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+}
+.inputs label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Smokey_grey);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.inputs input {
+  padding: 10px 20px;
+  width: 80px;
+  height: 25px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--Smokey_grey);
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.inputs input::placeholder {
+  color: var(--Smokey_grey);
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+}
+.label {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.horizontal_line {
+  width: 80%;
+  margin-left: 40px;
+  height: 0.2px;
+}
+.line_button {
+  display: flex;
+  height: 0;
+}
+.line_button .button {
+  background-color: var(--primary_purple);
+  border-radius: 50%;
+  padding: 14px;
+  margin-right: 40px;
+  margin-top: -35px;
+}
+
+/* Lower Section of results */
+.results {
+  font-size: var(--Font_size);
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: normal;
+  margin-left: 35px;
+  font-style: italic;
+  line-height: 1.1;
+  margin-top: 30px;
+  width: 60%;
+}
+span {
+  color: var(--primary_purple);
+}
