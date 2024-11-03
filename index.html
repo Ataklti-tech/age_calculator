@@ -22,16 +22,19 @@
     <div class="container">
       <div class="inputs">
         <div class="day">
-          <label for="" class="label">Day</label><br />
+          <label for="" class="label_day">Day</label><br />
           <input type="number" id="age_days" placeholder="DD" />
+          <div id="day_error" class="error"></div>
         </div>
         <div class="month">
-          <label for="" class="label">Month</label><br />
+          <label for="" class="label_month">Month</label><br />
           <input type="number" id="age_month" placeholder="MM" />
+          <div id="month_error" class="error"></div>
         </div>
         <div class="year">
-          <label for="" class="label">Year</label><br />
+          <label for="" class="label_year">Year</label><br />
           <input type="number" id="age_year" placeholder="YYYY" />
+          <div id="year_error" class="error"></div>
         </div>
       </div>
       <div class="line_button">
@@ -53,11 +56,12 @@
         </a>
       </div>
       <div class="results">
-        <h1><span>--</span>years</h1>
-        <h1><span>--</span>months</h1>
-        <h1><span>--</span>days</h1>
+        <h1><span id="age_years">--</span>years</h1>
+        <h1><span id="age_months">--</span>months</h1>
+        <h1><span id="age_days">--</span>days</h1>
       </div>
     </div>
+    <!-- <script src="script.js"></script> -->
     <script src="script.js"></script>
   </body>
 </html>
